@@ -1,66 +1,55 @@
 # Social-Network-Api
 
-## Description
+## Table of Contents
 
-This project is a simple API for a social networking app using MongoDB! Users can share their thoughts, react to friends’ thoughts, and create a friend list. Feel free to clone this repo and test the endpoints in Insomnia!
+- [Description](#description)
+- [Technology](#Technology)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Credits](#credits)
 
-Walkthrough video testing endpoints:
+## Description:
 
-Screenshot of sample endpoint testing:
+It's an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
+
+## Technology:
+
+Project is created with:
+
+- Javascript
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
 
 ## Installation
 
-Make sure to run 'npm i' to install all of the dependencies in the package.json file. This app uses Express, Moment (for timestamp), and Mongoose.
+To run this project, install it locally using npm:
+
+```
+npm install
+```
 
 ## Usage
 
-You can seed users by going to the POST user endpoint in Insomnia (http://localhost:3001/api/users) and populating it with sample data in the following JSON structure:
+After installing npm packages, the application will be invoked by using the following command:
 
 ```
-{
-  "username": "lernantino4",
-  "email": "lernantino4@gmail.com"
-}
+npm start
 ```
 
-You can then do a get request to see your sample user data (http://localhost:3001/api/users). You can also get data by User ID as well (http://localhost:3001/api/users/:userIDhere).
+#### Walkthrough Video
 
-PUT and DELETE for users is also supported.
+#### Insomnia Screenshot
 
-POST thoughts by usiing a valid userID (http://localhost:3001/api/thoughts/:useridhere) in the below format:
+## License
 
-```
-{
-  "thoughtText": "Here's another cool thought 4...",
-	"username": "lernantino4"
-}
-```
-
-GET all current thoughts via http://localhost:3001/api/thoughts. You can also get thoughts by their id.
-
-PUT and DELETE for thoughts is also supported.
-
-POST reactions by using a valid thoughtID (Example: http://localhost:3001/api/thoughts/64b18e4ffed373230ca97abc/reactions) and populate the body of the request with sample JSON like below.
-
-```
-{
-	"reactionBody": "Ohno3",
-	"username": "lernantino3"
-}
-```
-
-DELETE is also supported.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br>
+This project is licensed under MIT, for more information please visit [this website](https://opensource.org/licenses/MIT)
 
 ## Credits
 
 Columbia University Coding Bootcamp
 
-https://github.com/branchwag/SocialNetworkAPI
-
-## License
-
-MIT License
-
-## How to Contribute
-
-Follow the [Contributor Covenant](https://www.contributor-covenant.org/)!
+https://github.com/joce1ynn/social-network-NoSQL

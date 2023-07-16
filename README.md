@@ -41,6 +41,8 @@ npm start
 
 #### Walkthrough Video
 
+https://drive.google.com/file/d/1f_qhokYxBED10dfiFKxAv1zusHuJsHhV/view
+
 #### Insomnia Screenshot
 
 ## License
